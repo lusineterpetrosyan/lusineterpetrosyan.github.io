@@ -1,0 +1,885 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "DancingintheMinefields";
+  src: url('/stylesheets/fonts/../../fonts/DancingintheMinefields.ttf') format('truetype');
+}
+
+/* line 7, ../sass/style.scss */
+html {
+  min-height: 100%;
+  /* real browsers */
+  height: auto;
+  /* real browsers */
+  height: 100%;
+  /* IE6: treated as min-height*/
+  font: 28px/40px "DancingintheMinefields";
+}
+/* line 12, ../sass/style.scss */
+html body {
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  font-size: 100%;
+  background: #b1daf9 url(../../images/pattern1.png) repeat center center;
+  /*background: url(../../images/bg.png) no-repeat center center fixed;   
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  */
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/bg.png', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/bg.png', sizingMethod='scale');
+  height: 100%;
+}
+/* line 26, ../sass/style.scss */
+html body a {
+  /*color: #00B7FF;*/
+  color: #111111 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+/* line 33, ../sass/style.scss */
+html body #prelaoder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #fff;
+}
+/* line 41, ../sass/style.scss */
+html body #prelaoder #write-on.preloader {
+  height: 180px;
+  margin: 100px auto 0 auto;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: 0 0;
+  -webkit-mask-image: url(../../images/preload.png);
+  -webkit-animation: write-on 2.1s 1;
+  -webkit-animation-fill-mode: both;
+  width: 240px;
+  background: #111;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  -vendor-animation-duration: 6s;
+  -vendor-animation-delay: 3s;
+  -vendor-animation-iteration-count: infinite;
+}
+/* line 59, ../sass/style.scss */
+html body .main {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+}
+/* line 64, ../sass/style.scss */
+html body .main #menu {
+  background: url(../../images/logo.png) no-repeat center center;
+  width: 380px;
+  height: 600px;
+  margin: 33px auto;
+  background-size: 380px;
+  position: relative;
+}
+/* line 71, ../sass/style.scss */
+html body .main #menu .nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
+}
+/* line 77, ../sass/style.scss */
+html body .main #menu .nav li.contact {
+  background: url(../../images/menu.png) no-repeat -155px -10px;
+  width: 240px;
+  height: 50px;
+  margin-bottom: 110px;
+  margin-left: 0;
+  background-size: 380px;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+}
+/* line 87, ../sass/style.scss */
+html body .main #menu .nav li.contact:hover {
+  background-position: -152px -67px;
+  width: 235px;
+  margin-left: -30px;
+  margin-bottom: 115px;
+}
+/* line 94, ../sass/style.scss */
+html body .main #menu .nav li.skills {
+  background: url(../../images/menu.png) no-repeat 0px 0px;
+  width: 100px;
+  height: 110px;
+  margin-bottom: 110px;
+  margin-left: 0;
+  background-size: 380px;
+  cursor: pointer;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+/* line 105, ../sass/style.scss */
+html body .main #menu .nav li.skills:hover {
+  background-position: -2px -117px;
+  width: 140px;
+  height: 140px;
+  top: 6%;
+  right: 1%;
+}
+/* line 115, ../sass/style.scss */
+html body .main #menu.lightRight {
+  -webkit-animation-name: lightRight;
+  animation-name: lightRight;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 126, ../sass/style.scss */
+html body .main #menu.lightLeft {
+  -webkit-animation-name: lightLeft;
+  animation-name: lightLeft;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 137, ../sass/style.scss */
+html body .main #menu.floatClass {
+  float: left;
+  margin-left: 12%;
+}
+/* line 143, ../sass/style.scss */
+html body .main #menu.afterContactsTransitions {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/* line 151, ../sass/style.scss */
+html body .main #menu.slideOutUpM {
+  -webkit-animation-name: slideOutUpM;
+  animation-name: slideOutUpM;
+}
+/* line 156, ../sass/style.scss */
+html body .main #contactPaper {
+  background: url(../../images/contactPaper.png) no-repeat center center;
+  width: 700px;
+  height: 425px;
+  margin: 0 auto;
+}
+/* line 162, ../sass/style.scss */
+html body .main #contactPaper ol#contactList {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  padding: 90px 0 0;
+}
+/* line 170, ../sass/style.scss */
+html body .main #skillsPaper {
+  background: url(../../images/paper.png) no-repeat center center;
+  width: 477px;
+  height: 551px;
+  margin: 75px auto 0;
+  margin-left: 45%;
+  background-size: 100%;
+  -webkit-transition: all 2s;
+  /* For Safari 3.1 to 6.0 */
+  transition: all 2s;
+}
+/* line 179, ../sass/style.scss */
+html body .main #skillsPaper ol {
+  list-style-type: decimal;
+  padding: 75px 0px 0 125px;
+}
+/* line 182, ../sass/style.scss */
+html body .main #skillsPaper ol li {
+  opacity: 0;
+}
+/* line 187, ../sass/style.scss */
+html body .main #skillsPaper ol li.one.items {
+  -webkit-animation: new-item-animation 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+}
+/* line 192, ../sass/style.scss */
+html body .main #skillsPaper ol li.two.items {
+  -webkit-animation: new-item-animation 0.5s 1s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 1s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 1s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+}
+/* line 197, ../sass/style.scss */
+html body .main #skillsPaper ol li.three.items {
+  -webkit-animation: new-item-animation 0.5s 1.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 1.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 1.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+}
+/* line 202, ../sass/style.scss */
+html body .main #skillsPaper ol li.four.items {
+  -webkit-animation: new-item-animation 0.5s 2s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 2s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 2s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+}
+/* line 207, ../sass/style.scss */
+html body .main #skillsPaper ol li.five.items {
+  -webkit-animation: new-item-animation 0.5s 2.4s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 2.4s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 2.4s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+}
+/* line 212, ../sass/style.scss */
+html body .main #skillsPaper ol li.six.items {
+  -webkit-animation: new-item-animation 0.5s 3s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 3s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 3s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+}
+/* line 217, ../sass/style.scss */
+html body .main #skillsPaper ol li.seven.items {
+  -webkit-animation: new-item-animation 0.5s 3.2s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 3.2s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 3.2s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+}
+/* line 222, ../sass/style.scss */
+html body .main #skillsPaper ol li.eight.items {
+  -webkit-animation: new-item-animation 0.5s 3.8s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 3.8s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 3.8s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+}
+/* line 227, ../sass/style.scss */
+html body .main #skillsPaper ol li.nine.items {
+  -webkit-animation: new-item-animation 0.5s 4.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 4.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 4.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+}
+/* line 232, ../sass/style.scss */
+html body .main #skillsPaper ol li.ten.items {
+  -webkit-animation: new-item-animation 0.5s 5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+}
+/* line 239, ../sass/style.scss */
+html body .main #skillsPaper div.stamp {
+  background: url("../../images/stamp.png") no-repeat center center;
+  width: 130px;
+  height: 155px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  opacity: 0;
+}
+/* line 247, ../sass/style.scss */
+html body .main #skillsPaper div.stamp.expandOpen {
+  opacity: 1 !important;
+  animation-name: expandOpen;
+  -webkit-animation-name: expandOpen;
+  animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  visibility: visible !important;
+}
+/* line 263, ../sass/style.scss */
+html body .backRotate {
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+/* line 273, ../sass/style.scss */
+.one {
+  margin-left: 25px;
+}
+
+/* line 274, ../sass/style.scss */
+.two {
+  margin-left: 55px;
+}
+
+/* line 275, ../sass/style.scss */
+.three {
+  margin-left: 70px;
+}
+
+/* line 276, ../sass/style.scss */
+.four {
+  margin-left: 80px;
+}
+
+/* line 277, ../sass/style.scss */
+.five {
+  margin-left: 80px;
+}
+
+/* line 278, ../sass/style.scss */
+.six {
+  margin-left: 75px;
+}
+
+/* line 279, ../sass/style.scss */
+.seven {
+  margin-left: 60px;
+}
+
+/* line 280, ../sass/style.scss */
+.eight {
+  margin-left: 45px;
+}
+
+/* line 281, ../sass/style.scss */
+.nine {
+  margin-left: 25px;
+}
+
+/* line 282, ../sass/style.scss */
+.ten {
+  margin-left: 5px;
+}
+
+@-webkit-keyframes write-on {
+  /* line 288, ../sass/style.scss */
+  0%, 2.2% {
+    -webkit-mask-position: 0 0;
+  }
+
+  /* line 289, ../sass/style.scss */
+  2.20001%, 4% {
+    -webkit-mask-position: 0 -181.72px;
+  }
+
+  /* line 290, ../sass/style.scss */
+  4.00001%, 6.3% {
+    -webkit-mask-position: 0 -363.44px;
+  }
+
+  /* line 291, ../sass/style.scss */
+  6.30001%, 8.7% {
+    -webkit-mask-position: 0 -545.16px;
+  }
+
+  /* line 292, ../sass/style.scss */
+  8.70001%, 10.9% {
+    -webkit-mask-position: 0 -726.88px;
+  }
+
+  /* line 293, ../sass/style.scss */
+  10.90001%, 13.2% {
+    -webkit-mask-position: 0 -908.6px;
+  }
+
+  /* line 294, ../sass/style.scss */
+  13.20001%, 15.4% {
+    -webkit-mask-position: 0 -1090.32px;
+  }
+
+  /* line 295, ../sass/style.scss */
+  15.40001%, 17.6% {
+    -webkit-mask-position: 0 -1272.04px;
+  }
+
+  /* line 296, ../sass/style.scss */
+  17.60001%, 19.8% {
+    -webkit-mask-position: 0 -1453.76px;
+  }
+
+  /* line 297, ../sass/style.scss */
+  19.80001%, 22% {
+    -webkit-mask-position: 0 -1635.48px;
+  }
+
+  /* line 299, ../sass/style.scss */
+  22.00001%, 24.2% {
+    -webkit-mask-position: 0 -1817.2px;
+  }
+
+  /* line 300, ../sass/style.scss */
+  24.20001%, 26.4% {
+    -webkit-mask-position: 0 -1998.92px;
+  }
+
+  /* line 301, ../sass/style.scss */
+  26.40001%, 28.8% {
+    -webkit-mask-position: 0 -2180.64px;
+  }
+
+  /* line 302, ../sass/style.scss */
+  28.80001%, 31% {
+    -webkit-mask-position: 0 -2362.36px;
+  }
+
+  /* line 303, ../sass/style.scss */
+  31.00001%, 33.2% {
+    -webkit-mask-position: 0 -2544.08px;
+  }
+
+  /* line 304, ../sass/style.scss */
+  33.20001%, 35.4% {
+    -webkit-mask-position: 0 -2725.8px;
+  }
+
+  /* line 305, ../sass/style.scss */
+  35.40001%, 37.6% {
+    -webkit-mask-position: 0 -2907.52px;
+  }
+
+  /* line 306, ../sass/style.scss */
+  37.60001%, 39.8% {
+    -webkit-mask-position: 0 -3089.24px;
+  }
+
+  /* line 307, ../sass/style.scss */
+  39.80001%, 42% {
+    -webkit-mask-position: 0 -3270.96px;
+  }
+
+  /* line 308, ../sass/style.scss */
+  42.00001%, 44.2% {
+    -webkit-mask-position: 0 -3452.68px;
+  }
+
+  /* line 310, ../sass/style.scss */
+  44.20001%, 46.4% {
+    -webkit-mask-position: 0 -3634.4px;
+  }
+
+  /* line 311, ../sass/style.scss */
+  46.40001%, 48.8% {
+    -webkit-mask-position: 0 -3816.12px;
+  }
+
+  /* line 312, ../sass/style.scss */
+  48.80001%, 51% {
+    -webkit-mask-position: 0 -3997.84px;
+  }
+
+  /* line 313, ../sass/style.scss */
+  51.00001%, 53.2% {
+    -webkit-mask-position: 0 -4179.56px;
+  }
+
+  /* line 314, ../sass/style.scss */
+  53.20001%, 55.4% {
+    -webkit-mask-position: 0 -4361.28px;
+  }
+
+  /* line 315, ../sass/style.scss */
+  55.40001%, 57.6% {
+    -webkit-mask-position: 0 -4543px;
+  }
+
+  /* line 316, ../sass/style.scss */
+  57.60001%, 59.8% {
+    -webkit-mask-position: 0 -4724.72px;
+  }
+
+  /* line 317, ../sass/style.scss */
+  59.80001%, 62% {
+    -webkit-mask-position: 0 -4906.44px;
+  }
+
+  /* line 318, ../sass/style.scss */
+  62.00001%, 64.2% {
+    -webkit-mask-position: 0 -5088.16px;
+  }
+
+  /* line 319, ../sass/style.scss */
+  64.20001%, 66.4% {
+    -webkit-mask-position: 0 -5269.88px;
+  }
+
+  /* line 321, ../sass/style.scss */
+  66.40001%, 68.6% {
+    -webkit-mask-position: 0 -5451.6px;
+  }
+
+  /* line 322, ../sass/style.scss */
+  68.60001%, 70.8% {
+    -webkit-mask-position: 0 -5633.32px;
+  }
+
+  /* line 323, ../sass/style.scss */
+  70.80001%, 73% {
+    -webkit-mask-position: 0 -5815.04px;
+  }
+
+  /* line 324, ../sass/style.scss */
+  73.00001%, 75.2% {
+    -webkit-mask-position: 0 -5996.76px;
+  }
+
+  /* line 325, ../sass/style.scss */
+  75.20001%, 77.4% {
+    -webkit-mask-position: 0 -6178.48px;
+  }
+
+  /* line 326, ../sass/style.scss */
+  77.40001%, 79.6% {
+    -webkit-mask-position: 0 -6360.2px;
+  }
+
+  /* line 327, ../sass/style.scss */
+  79.60001%, 81.8% {
+    -webkit-mask-position: 0 -6541.92px;
+  }
+
+  /* line 328, ../sass/style.scss */
+  81.80001%, 84% {
+    -webkit-mask-position: 0 -6723.64px;
+  }
+
+  /* line 329, ../sass/style.scss */
+  84.00001%, 86.2% {
+    -webkit-mask-position: 0 -6905.36px;
+  }
+
+  /* line 330, ../sass/style.scss */
+  86.20001%, 88.4% {
+    -webkit-mask-position: 0 -7087.08px;
+  }
+
+  /* line 332, ../sass/style.scss */
+  88.40001%, 90.6% {
+    -webkit-mask-position: 0 -7268.8px;
+  }
+
+  /* line 333, ../sass/style.scss */
+  90.60001%, 92.8% {
+    -webkit-mask-position: 0 -7450.52px;
+  }
+
+  /* line 334, ../sass/style.scss */
+  92.80001%, 95% {
+    -webkit-mask-position: 0 -7632.24px;
+  }
+
+  /* line 335, ../sass/style.scss */
+  95.00001%, 97.2% {
+    -webkit-mask-position: 0 -7813.96px;
+  }
+
+  /* line 336, ../sass/style.scss */
+  97.20001%, 100% {
+    -webkit-mask-position: 0 -7995.68px;
+  }
+}
+
+@keyframes new-item-animation {
+  /* line 340, ../sass/style.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+
+  /* line 348, ../sass/style.scss */
+  70% {
+    opacity: 1;
+    -webkit-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+
+  /* line 356, ../sass/style.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes new-item-animation {
+  /* line 367, ../sass/style.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+
+  /* line 373, ../sass/style.scss */
+  70% {
+    opacity: 1;
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+
+  /* line 379, ../sass/style.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes new-item-animation {
+  /* line 387, ../sass/style.scss */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+
+  /* line 393, ../sass/style.scss */
+  70% {
+    opacity: 1;
+    -o-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
+
+  /* line 399, ../sass/style.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes lightRight {
+  /* line 407, ../sass/style.scss */
+  0% {
+    margin-left: 31%;
+  }
+
+  /* line 411, ../sass/style.scss */
+  100% {
+    margin-left: 12%;
+  }
+}
+
+@keyframes lightRight {
+  /* line 417, ../sass/style.scss */
+  0% {
+    margin-left: 31%;
+  }
+
+  /* line 421, ../sass/style.scss */
+  100% {
+    margin-left: 12%;
+  }
+}
+
+@-webkit-keyframes lightLeft {
+  /* line 426, ../sass/style.scss */
+  0% {
+    margin-left: 12%;
+  }
+
+  /* line 430, ../sass/style.scss */
+  100% {
+    margin-left: 31%;
+  }
+}
+
+@keyframes lightLeft {
+  /* line 436, ../sass/style.scss */
+  0% {
+    margin-left: 12%;
+  }
+
+  /* line 440, ../sass/style.scss */
+  100% {
+    margin-left: 31%;
+  }
+}
+
+@-webkit-keyframes slideOutUpM {
+  /* line 449, ../sass/style.scss */
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    width: 380px;
+    height: 600px;
+    margin: 33px auto;
+    background-size: 380px;
+  }
+
+  /* line 458, ../sass/style.scss */
+  100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    width: 600px;
+    height: 200px;
+    margin: 30px auto;
+    background-size: 120px;
+  }
+}
+
+@keyframes slideOutUpM {
+  /* line 469, ../sass/style.scss */
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    width: 380px;
+    height: 600px;
+    margin: 33px auto;
+    background-size: 380px;
+  }
+
+  /* line 479, ../sass/style.scss */
+  100% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+    width: 600px;
+    height: 200px;
+    margin: 30px auto;
+    background-size: 120px;
+  }
+}
+
+@keyframes expandOpen {
+  /* line 491, ../sass/style.scss */
+  0% {
+    opacity: 0.2;
+    transform: scale(1.8);
+  }
+
+  /* line 495, ../sass/style.scss */
+  50% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+
+  /* line 499, ../sass/style.scss */
+  80% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+
+  /* line 503, ../sass/style.scss */
+  90% {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+
+  /* line 507, ../sass/style.scss */
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes expandOpen {
+  /* line 514, ../sass/style.scss */
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(1.8);
+  }
+
+  /* line 518, ../sass/style.scss */
+  50% {
+    opacity: 0.6;
+    -webkit-transform: scale(0.95);
+  }
+
+  /* line 522, ../sass/style.scss */
+  80% {
+    opacity: 0.7;
+    -webkit-transform: scale(1.05);
+  }
+
+  /* line 526, ../sass/style.scss */
+  90% {
+    opacity: 0.9;
+    -webkit-transform: scale(0.98);
+  }
+
+  /* line 530, ../sass/style.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+
+/* line 536, ../sass/style.scss */
+.preventEvent {
+  pointer-events: none;
+}
