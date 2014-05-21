@@ -2,7 +2,7 @@
 
 @import "compass/css3";
 
-@include font-face("DancingintheMinefields", font-files("../../fonts/DancingintheMinefields.ttf"));
+@include font-face("DancingintheMinefields", font-files("DancingintheMinefields.ttf"));
 
 html {
     min-height: 100%; /* real browsers */
@@ -23,6 +23,7 @@ html {
         -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/bg.png', sizingMethod='scale')";  
         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/bg.png', sizingMethod='scale');  
         height: 100%;
+
         a {
           /*color: #00B7FF;*/
           color: #111!important;
