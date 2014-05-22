@@ -4,7 +4,7 @@ var myDirectives = angular.module('my-directives',[]);
 	myDirectives.directive('contactPaper', function($timeout){
 		return{
 			restrict: 'E',
-			templateUrl: 'partials/_contact.html',
+			templateUrl: '../partials/_contact.html',
 			controller: function($scope){
 				var self = this;
 
@@ -52,7 +52,7 @@ var myDirectives = angular.module('my-directives',[]);
 	myDirectives.directive('skillsPaper', function($timeout){
 		return{
 			restrict: 'E',
-			templateUrl: './partials/_about.html',
+			templateUrl: '../partials/_about.html',
 			controller: function($scope){
 				var self = this;
 
