@@ -10,8 +10,11 @@ var myDirectives = angular.module('my-directives',[]);
 
 				$scope.enableSkills = false;
 				$scope.enableContact = false;
+				$scope.isFirst = false;
 
 				this.contactPage = function(){ 
+					if($scope.isFirst == false)
+						$scope.isFirst = true;
 			        var menu = document.getElementById('menu'); 
 			        	document.getElementById('skillMe').className = 'skills'; 
 			        	document.getElementById('skillsPaper').style.marginLeft = '50%'; 
@@ -25,7 +28,7 @@ var myDirectives = angular.module('my-directives',[]);
 			
 			        	document.getElementById('skillsPaper').className = 'animated hinge'; 
 			        	
-			        if(!$scope.enableSkills){
+			        if(!$scope.enableSkills $$ $scope.isFirst == true){
 						self.rotations();
 			        }else{
 			          var isloadHideLeft = function() {
@@ -41,11 +44,9 @@ var myDirectives = angular.module('my-directives',[]);
 			      }
 				this.rotations = function(){
 					menu.className = 'animated slideOutUpM';
-					if($scope.enableSkills){
-						document.getElementById('skillMe').className  = 'skills backRotate';
-						document.getElementById('stamp').className = 'stamp';
-					}
+					document.getElementById('skillMe').className  = 'skills backRotate';
 					$scope.enableContact = true;
+					document.getElementById('stamp').className = 'stamp';
 				}
 			},
 			controllerAs: 'contact'
