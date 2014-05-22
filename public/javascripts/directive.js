@@ -28,7 +28,7 @@ var myDirectives = angular.module('my-directives',[]);
 			
 			        	document.getElementById('skillsPaper').className = 'animated hinge'; 
 			        	
-			        if(!$scope.enableSkills $$ $scope.isFirst == true){
+			        if(!$scope.enableSkills && $scope.isFirst){
 						self.rotations();
 			        }else{
 			          var isloadHideLeft = function() {
