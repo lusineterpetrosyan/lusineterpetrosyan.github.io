@@ -4,7 +4,7 @@ var myDirectives = angular.module('my-directives',[]);
 	myDirectives.directive('contactPaper', function($timeout){
 		return{
 			restrict: 'E',
-			templateUrl: '../partials/contact.html',
+			templateUrl: '/public/partials/contact.html',
 			controller: function($scope){
 				var self = this;
 
@@ -52,7 +52,7 @@ var myDirectives = angular.module('my-directives',[]);
 	myDirectives.directive('skillsPaper', function($timeout){
 		return{
 			restrict: 'E',
-			templateUrl: '../partials/about.html',
+			templateUrl: '/public/partials/about.html',
 			controller: function($scope){
 				var self = this;
 
@@ -126,7 +126,7 @@ var myDirectives = angular.module('my-directives',[]);
 	myDirectives.directive('bigMenu', function(){
 		return{
 			restrict: 'E',
-			templateUrl: '../partials/menu.html'
+			templateUrl: '/public/partials/menu.html'
 		};
 	});
 })();
