@@ -191,14 +191,14 @@ html {
                           animation: new-item-animation .5s cubic-bezier(.14,.25,.52,1.56) forwards;
                         }
                         &.two.items{
-                          -webkit-animation: new-item-animation .5s 1s cubic-bezier(.14,.25,.52,1.56) forwards;
-                          -o-animation: new-item-animation .5s 1s cubic-bezier(.14,.25,.52,1.56) forwards;
-                          animation: new-item-animation .5s 1s cubic-bezier(.14,.25,.52,1.56) forwards;
+                          -webkit-animation: new-item-animation .5s .5s cubic-bezier(.14,.25,.52,1.56) forwards;
+                          -o-animation: new-item-animation .5s .5s cubic-bezier(.14,.25,.52,1.56) forwards;
+                          animation: new-item-animation .5s .5s cubic-bezier(.14,.25,.52,1.56) forwards;
                         }
                         &.three.items{
-                          -webkit-animation: new-item-animation .5s 1.5s cubic-bezier(.14,.25,.52,1.56) forwards;
-                          -o-animation: new-item-animation .5s 1.5s cubic-bezier(.14,.25,.52,1.56) forwards;
-                          animation: new-item-animation .5s 1.5s cubic-bezier(.14,.25,.52,1.56) forwards;
+                          -webkit-animation: new-item-animation .5s .5s cubic-bezier(.14,.25,.52,1.56) forwards;
+                          -o-animation: new-item-animation .5s .5s cubic-bezier(.14,.25,.52,1.56) forwards;
+                          animation: new-item-animation .5s .5s cubic-bezier(.14,.25,.52,1.56) forwards;
                         }
                         &.four.items{
                           -webkit-animation: new-item-animation .5s 2s cubic-bezier(.14,.25,.52,1.56) forwards;

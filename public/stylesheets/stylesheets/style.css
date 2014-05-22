@@ -10,7 +10,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,52 +32,52 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
 @font-face {
   font-family: "DancingintheMinefields";
-  src: url('../../fonts/DancingintheMinefields.ttf') format('truetype');
+  src: url('/stylesheets/fonts/../../fonts/DancingintheMinefields.ttf') format('truetype');
 }
 
 /* line 7, ../sass/style.scss */
@@ -287,15 +287,15 @@ html body .main #skillsPaper ol li.one.items {
 }
 /* line 193, ../sass/style.scss */
 html body .main #skillsPaper ol li.two.items {
-  -webkit-animation: new-item-animation 0.5s 1s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
-  -o-animation: new-item-animation 0.5s 1s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
-  animation: new-item-animation 0.5s 1s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -webkit-animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
 }
 /* line 198, ../sass/style.scss */
 html body .main #skillsPaper ol li.three.items {
-  -webkit-animation: new-item-animation 0.5s 1.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
-  -o-animation: new-item-animation 0.5s 1.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
-  animation: new-item-animation 0.5s 1.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -webkit-animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
 }
 /* line 203, ../sass/style.scss */
 html body .main #skillsPaper ol li.four.items {
