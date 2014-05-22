@@ -10,11 +10,8 @@ var myDirectives = angular.module('my-directives',[]);
 
 				$scope.enableSkills = false;
 				$scope.enableContact = false;
-				$scope.isFirst = false;
 
 				this.contactPage = function(){ 
-					if($scope.isFirst == false)
-						$scope.isFirst = true;
 			        var menu = document.getElementById('menu'); 
 			        	document.getElementById('skillMe').className = 'skills'; 
 			        	document.getElementById('skillsPaper').style.marginLeft = '50%'; 
@@ -28,7 +25,7 @@ var myDirectives = angular.module('my-directives',[]);
 			
 			        	document.getElementById('skillsPaper').className = 'animated hinge'; 
 			        	
-			        if(!$scope.enableSkills && $scope.isFirst){
+			        if(!$scope.enableSkills){
 						self.rotations();
 			        }else{
 			          var isloadHideLeft = function() {
