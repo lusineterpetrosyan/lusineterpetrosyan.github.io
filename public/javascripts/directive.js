@@ -26,7 +26,7 @@ var myDirectives = angular.module('my-directives',[]);
 			        	document.getElementById('skillsPaper').className = 'animated hinge'; 
 			        	
 			        if(!$scope.enableSkills){
-						//self.rotations();
+						self.rotations();
 			        }else{
 			          var isloadHideLeft = function() {
 			            menu.className = 'lightLeft';
@@ -41,9 +41,11 @@ var myDirectives = angular.module('my-directives',[]);
 			      }
 				this.rotations = function(){
 					menu.className = 'animated slideOutUpM';
-					document.getElementById('skillMe').className  = 'skills backRotate';
+					if(!$scope.enableSkills){
+						document.getElementById('skillMe').className  = 'skills backRotate';
+						document.getElementById('stamp').className = 'stamp';
+					}
 					$scope.enableContact = true;
-					document.getElementById('stamp').className = 'stamp';
 				}
 			},
 			controllerAs: 'contact'
