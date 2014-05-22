@@ -126,7 +126,7 @@ var myDirectives = angular.module('my-directives',[]);
 	myDirectives.directive('bigMenu', function(){
 		return{
 			restrict: 'E',
-			templateUrl: '../partials/_about.html'
+			templateUrl: '../partials/_menu.html'
 		};
 	});
 })();
