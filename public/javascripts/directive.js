@@ -41,7 +41,7 @@ var myDirectives = angular.module('my-directives',[]);
 			      }
 				this.rotations = function(){
 					menu.className = 'animated slideOutUpM';
-					if(!$scope.enableSkills){
+					if($scope.enableSkills){
 						document.getElementById('skillMe').className  = 'skills backRotate';
 						document.getElementById('stamp').className = 'stamp';
 					}
