@@ -8,12 +8,14 @@ var myDirectives = angular.module('my-directives',[]);
 			controller: function($scope){
 				var self = this;
 
-				$scope.enableSkills = false;
-				$scope.enableContact = false;
-
 				this.contactPage = function(){ 
 			        var menu = document.getElementById('menu'); 
-			        	document.getElementById('skillMe').className = 'skills'; 
+			        
+			        	
+			        if(!$scope.enableSkills){
+						self.rotations();
+			        }else{
+			        		document.getElementById('skillMe').className = 'skills'; 
 			        	document.getElementById('skillsPaper').style.marginLeft = '50%'; 
 			        	document.getElementById('skillsPaper').style.backgroundSize = '80%'; 
 			        	document.getElementById('skillsPaper').style.fontSize = '70%'; 
@@ -24,10 +26,6 @@ var myDirectives = angular.module('my-directives',[]);
 			        	document.getElementById('stamp').style.right = '60px'; 
 			
 			        	document.getElementById('skillsPaper').className = 'animated hinge'; 
-			        	
-			        if(!$scope.enableSkills){
-						self.rotations();
-			        }else{
 			          var isloadHideLeft = function() {
 			            menu.className = 'lightLeft';
 			          }
@@ -56,8 +54,6 @@ var myDirectives = angular.module('my-directives',[]);
 			controller: function($scope){
 				var self = this;
 
-				$scope.enableSkills = false;
-				$scope.enableContact = false;
 				this.skillsPage = function(){
 
 		        	document.getElementById('skillsPaper').style.marginLeft = '45%'; 

@@ -5,6 +5,10 @@
 angularModuls.
   controller('IndexCtrl', function ($scope, $http,$timeout) {
     $scope.isloaded = true;
+    
+        $scope.enableSkills = false;
+        $scope.enableContact = false;
+
     if($scope.isloaded){
       var prelaoder = document.getElementById('write-on');
       var prelaoderPArent = document.getElementById('prelaoder');
