@@ -2,7 +2,7 @@
 
 @import "compass/css3";
 
-@include font-face("DancingintheMinefields", font-files("DancingintheMinefields.ttf"));
+@include font-face("DancingintheMinefields", font-files("/public/fonts/DancingintheMinefields.ttf"));
 
 html {
     min-height: 100%; /* real browsers */
