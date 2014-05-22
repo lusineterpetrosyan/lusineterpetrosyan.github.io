@@ -4,7 +4,7 @@ var myDirectives = angular.module('my-directives',[]);
 	myDirectives.directive('contactPaper', function($timeout){
 		return{
 			restrict: 'E',
-			templateUrl: './partials/_contact.html',
+			templateUrl: 'partials/_contact.html',
 			controller: function($scope){
 				var self = this;
 
