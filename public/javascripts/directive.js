@@ -126,7 +126,7 @@ var myDirectives = angular.module('my-directives',[]);
 	myDirectives.directive('bigMenu', function(){
 		return{
 			restrict: 'E',
-			templateUrl: '../partials/_menu.html'
+			templateUrl: 'https://raw.githubusercontent.com/lusineterpetrosyan/lusineterpetrosyan.github.io/86ae2031587fa9512de3b297b33f47c07b954bf1/partials/_menu.html'
 		};
 	});
 })();
