@@ -77,7 +77,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
   font-family: "DancingintheMinefields";
-  src: url('/stylesheets/fonts/../../fonts/DancingintheMinefields.ttf') format('truetype');
+  src: url('/stylesheets/fonts/DancingintheMinefields.ttf') format('truetype');
 }
 
 /* line 7, ../sass/style.scss */
@@ -287,21 +287,21 @@ html body .main #skillsPaper ol li.one.items {
 }
 /* line 193, ../sass/style.scss */
 html body .main #skillsPaper ol li.two.items {
-  -webkit-animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
-  -o-animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
-  animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -webkit-animation: new-item-animation 0.5s 0.8 cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 0.8 cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 0.8 cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
 }
 /* line 198, ../sass/style.scss */
 html body .main #skillsPaper ol li.three.items {
-  -webkit-animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
-  -o-animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
-  animation: new-item-animation 0.5s 0.5s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -webkit-animation: new-item-animation 0.5s 1s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 1s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 1s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
 }
 /* line 203, ../sass/style.scss */
 html body .main #skillsPaper ol li.four.items {
-  -webkit-animation: new-item-animation 0.5s 2s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
-  -o-animation: new-item-animation 0.5s 2s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
-  animation: new-item-animation 0.5s 2s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -webkit-animation: new-item-animation 0.5s 1.4s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  -o-animation: new-item-animation 0.5s 1.4s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
+  animation: new-item-animation 0.5s 1.4s cubic-bezier(0.14, 0.25, 0.52, 1.56) forwards;
 }
 /* line 208, ../sass/style.scss */
 html body .main #skillsPaper ol li.five.items {
